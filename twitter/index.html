@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Twitter.com</title>
+   <link rel="icon" type="image/png" href="./images/favicon.ico" />
+   <link type="text/css" href="css/stylesheet.css" rel="stylesheet">
+   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+   <div class="topBar">
+      <div class="navigation">
+         <ul>
+            <li><a href="http://www.platformprojects.org/twitter"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-bell"></i>Notifications</a></li>
+            <li><a href="#"><i class="fa fa-laptop"></i>Discover</li></li>
+            <li><a href="#"><i class="fa fa-user"></i>Me</li></li>
+         </ul>
+      </div>
+      <div class="interface">
+         <div class="postTweet">
+            <i class="fa fa-pencil-square-o"></i>
+         </div>
+         <div class="settings">
+            <i class="fa fa-cog"></i>
+         </div>
+         <a href="#">
+         <div class="messages">
+            <i class="fa fa-envelope"></i>
+         </div>
+         <div class="searchBar">
+            <form action="search_request.asp">
+               <input type="text" name="Search" placeholder="&nbsp;Search">
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="wrapper">
+      <div class="leftColumn">
+         <div class="profile">
+            <a href="https://twitter.com/lycanstrife">
+               <div class="imagery">
+                  <img class="avatar" src="./images/me.png">
+                  <h1>
+                     Matt Thomas
+                  </h1>
+                  <h3>
+                     @lycanstrife
+                  </h3>
+               </div>
+            </a>
+            <div class="statistics">
+               <ul class="tags">
+                  <li>TWEETS</li>
+                  <li>FOLLOWING</li>
+                  <li>FOLLOWERS</li>
+               </ul>
+               <ul>
+                  <li class="numbers">4,436</li>
+                  <li class="numbers">130&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                  <li class="numbers">133</li>
+               </ul>
+            </div>
+            <div class="quick_tweet_box">
+               <form class="new_tweet_container" action="/search">
+                  <input class="new_tweet_input" type="text" placeholder=" Compose New Tweet...">
+               <div class="hidden_buttons">
+                  <ul>
+                     <li><i class="fa fa-camera"></i></li>
+                     <li><i class="fa fa-map-marker"></i></li>
+                     <li class ="characters"> 140 </li>
+                     <li class ="tweet_button"><i class="fa fa-pencil-square-o"></i> Tweet</li>
+                  </ul>
+               </div>
+               </form>
+            </div>
+         </div>
+         <div class="suggestions">
+            <div class="userProfiles">
+               <h2>
+                  Who to follow
+               </h2>
+               <div class="avatars">
+                  <img src="images/smallEgg.jpg">
+                  <img src="images/smallEggOrange.jpg">
+                  <img src="images/smallEgg.jpg">
+               </div>
+               <div class="names">
+                  <h4>
+                     Mr. Blue
+                  </h4>
+                  <h5>
+                     @MrBlueEgg
+                  </h5>
+                  <h4>
+                     Terry's
+                  </h4>
+                  <h5>
+                     @ChocolateOrange
+                  </h5>
+                  <h4>
+                     Blue's Twin
+                  </h4>
+                  <h5>
+                     @Evil_Imposter
+                  </h5>
+               </div>
+            </div>
+            <div class="findPeople">
+               <div class="gmail">
+                  <img src="images/gmail.png">
+               </div>
+               <div class="gmailTagline">
+                  <h4>
+                     Find people you know
+                  </h4>
+                  <h5>
+                     Import your contacts from Gmail
+                  </h5>
+               </div>
+               <div class="clear">
+               </div>
+               <hr />
+               <h6>
+                  Connect other address books
+               </h6>
+            </div>
+         </div>
+         <div class="trends">
+            <h2>
+               Worldwide Trends
+            </h2>
+            <h6>
+               #infiniteScrollIsEvil
+            </h6>
+            <h6>
+               #JQueryIsEvil
+            </h6>
+            <h6>
+               #AJAXisEvil
+            </h6>
+            <h6>
+               #JsonIsEvil
+            </h6>
+            <h6>
+               #justFuckingWorkPlz
+            </h6>
+            <h6>
+               #Time4bedNowRite
+            </h6>
+         </div>
+         <div class="footer">
+         <br />
+            <h5>
+               &copy; 2014 Twitter
+            </h5>
+            <a href="https://twitter.com/about">
+               <h5>About</h5>
+            </a>
+            <a href="https://support.twitter.com/">
+               <h5>Help</h5>
+            </a>
+            <a href="https://twitter.com/tos">
+               <h5>Terms</h5>
+            </a>
+            <a href="https://twitter.com/privacy">
+               <h5>Privacy</h5>
+            </a>
+            <a href="https://support.twitter.com/articles/20170514">
+               <h5>Cookies</h5>
+            </a>
+            <a href="https://support.twitter.com/articles/20170451">
+               <h5>Ads info</h5>
+            </a>
+            <a href="https://about.twitter.com/press/brand-assets">
+               <h5>Brand</h5>
+            </a>
+            <a href="https://blog.twitter.com/">
+               <h5>Blog</h5>
+            </a>
+            <a href="http://status.twitter.com/">
+               <h5>Status</h5>
+            </a>
+            <a href="https://about.twitter.com/products">
+               <h5>Apps</h5>
+            </a>
+            <a href="https://twitter.com/jobs">
+               <h5>Jobs</h5>
+            </a>
+            <a href="https://ads.twitter.com/start?ref=gl-tw-tw-twitter-advertise">
+               <h5>Advertise</h5>
+            </a>
+            <a href="https://business.twitter.com/">
+               <h5>Businesses</h5>
+            </a>
+            <a href="https://media.twitter.com/">
+               <h5>Media</h5>
+            </a>
+            <a href="https://dev.twitter.com/">
+               <h5>Developers</h5>
+            </a>
+         </div>
+      </div>
+      <div class="rightColumn">
+         <div class="tweets">
+            <h2>
+               Tweets
+            </h2>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@HardBoiled Well, that'll make breakfast a whole lot messier</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @HardBoiled
+               </h5>
+               <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @MHardBoiled
+               </h5>
+               <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@HardBoiled Well, that'll make breakfast a whole lot messier</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @HardBoiled
+               </h5>
+               <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @MHardBoiled
+               </h5>
+               <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+                        <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@HardBoiled Well, that'll make breakfast a whole lot messier</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @HardBoiled
+               </h5>
+               <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEgg.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Blue Egg
+               </h4>
+               <h5>
+                  @MrsBlueEgg
+               </h5>
+               <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="tweetAvatar">
+               <img src="images/smallEggOrange.jpg">
+            </div>
+            <div class="tweetText">
+               <h4>
+                  Egg-celent!
+               </h4>
+               <h5>
+                  @MHardBoiled
+               </h5>
+               <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+            </div>
+            <div class="clear"></div>
+            <hr />
+            <div class="loader">
+               <img class ="spinner" src="images/spinner.gif">
+                     <h5 class="loading">
+                        Loading...
+                     </h5>
+            </div>
+            <div class="hidden-tweet">
+               <div class="tweet_body">
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>
+                        @HardBoiled Well, that'll make breakfast a whole lot messier
+                     </h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @HardBoiled
+                     </h5>
+                     <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @MHardBoiled
+                     </h5>
+                     <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>
+                        @HardBoiled Well, that'll make breakfast a whole lot messier
+                     </h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @HardBoiled
+                     </h5>
+                     <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @MHardBoiled
+                     </h5>
+                     <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>
+                        @HardBoiled Well, that'll make breakfast a whole lot messier
+                     </h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @HardBoiled
+                     </h5>
+                     <h6>@MrsBlueEgg A new pay rise for soldiers was just announced!</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEgg.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Blue Egg
+                     </h4>
+                     <h5>
+                        @MrsBlueEgg
+                     </h5>
+                     <h6>@CremeEgg Easter's just around the corner. Should we be worried?</h6>
+                  </div>
+                  <div class="clear"></div>
+                  <hr />
+                  <div class="tweetAvatar">
+                     <img src="images/smallEggOrange.jpg">
+                  </div>
+                  <div class="tweetText">
+                     <h4>
+                        Egg-celent!
+                     </h4>
+                     <h5>
+                        @MHardBoiled
+                     </h5>
+                     <h6>Which came first? The chicken or the egg? #egg-istentialCrisis</h6>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <br clear='all'>
+            </div>
+            <br clear='all'>
+         </div>
+      </div>
+   </div>
+   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+   <script src="scripts/miniScript.js"></script>
+</body>
+</html>
