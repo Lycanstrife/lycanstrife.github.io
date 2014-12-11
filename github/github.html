@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Github profiles</title>
+    <link href='github.css' rel='stylesheet'>
+    <meta charset='utf-8'>
+    <link type="text/css" href="../css/prototypeStylesheet.css" rel="stylesheet" />
+    <link type="text/css" href="github.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="fixedHeader">
+
+      <!--PAGE HEADER-->
+
+      <div class="navbar">
+        <a href="../index.html">
+        <div class="logo">
+        </div>
+        </a>
+        <ul class="navigation">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../work.html">Work</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="social">
+          <a href="https://twitter.com/Platform_Tweets" target="blank"><img src="../images/twitter.png"></a>
+          <a href="http://uk.linkedin.com/pub/matthew-thomas/25/6a0/a57" target="blank"><img src="../images/linkedin.png"></a>
+          <a href="https://plus.google.com/+MatthewThomasPlatformProjects/about/p/pub" target="blank"><img src="../images/google.png"></a>
+        </div>
+      </div>
+    </div>
+
+    <form id='add_profile'>
+      <input id='username' autocomplete="on" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder='Enter a Github username'>
+      <button type='submit'>Load profile</button>
+    </form>
+
+      <div class='profile-container'>
+
+        <template id='profile-template'>
+          <div class="profile">
+            <div class="left">
+              <img src="{{ avatar_url }}">
+            </div>
+
+            <div class="right">
+              <h3>
+                <a href="{{ url }}">
+                  {{ login }}
+                </a>
+              </h3>
+              <h4>Repos: {{ public_repos }}</h4>
+              <h4>Followers: {{ followers }}</h4>
+            </div>
+
+            <a class='close' href='#'>✖</a>
+
+            <br clear="all">
+          </div>
+        </template>
+      </div>
+
+      <hr />
+
+<div class="githubContainer">
+  <div class="clear">
+    </div>
+      <div class="footer">
+        <div class="logo">
+                  <a href="http://www.platformprojects.org"><img src="../images/logo2.png"></a>
+            </div>
+            <ul class="navigation">
+                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social">
+                  <a href="https://twitter.com/Platform_Tweets" target="blank"><img src="../images/twitter.png"></a>
+                  <a href="http://uk.linkedin.com/pub/matthew-thomas/25/6a0/a57" target="blank"><img src="../images/linkedin.png"></a>
+                  <a href="https://plus.google.com/+MatthewThomasPlatformProjects/about/p/pub" target="blank"><img src="../images/google.png"></a>
+            </div>
+      </div>
+    </div>
+</div>
+
+      <script src='https://code.jquery.com/jquery-2.1.0.min.js'></script>
+      <script src='mustache.js'></script>
+      <script>
+        function addProfileFromUsername(username) {
+          $.get('https://api.github.com/users/' + username, function(user) {
+            var newProfile = Mustache.render($('#profile-template').html(), user);
+            $(newProfile).prependTo('.profile-container').slideDown();
+        }).fail(function() {
+            alert("We couldn't fetch that user's data.")
+        }).always(function(){
+            $('#username').val('');
+        })
+      }
+
+      $(document).ready(function(){
+        var usernames = ['c3po', 'hansolo', 'bobafett', 'benkenobi', 'lorddarthvader'];
+
+        usernames.forEach(function(username){
+          addProfileFromUsername(username);
+        });
+
+        $('.profile-container').on('click', '.close', function() {
+          $(this).parent().remove();
+        })
+
+        $('#add_profile').on('submit', function(event) {
+          event.preventDefault();
+          var usernameEntered = $('#username').val();
+          addProfileFromUsername(usernameEntered);
+        });
+
+      })
+    </script>
+
+  </body>
+</html>
