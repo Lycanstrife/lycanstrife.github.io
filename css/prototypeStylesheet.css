@@ -69,6 +69,7 @@ h4
 
 a
 {
+	display: block;
 	color: #5a5b68;
 	list-style: none;
 	text-decoration: none;
@@ -87,6 +88,7 @@ hr
 {
 	color: #ffffff;
 	background-color: #ffffff;
+	width: 100%;
 	height: 1px;
 	border: 0px;
 	margin-top: 0px;
